@@ -8,4 +8,5 @@
 * Generate Private/Public Keys
 
 * Basic Shell commands
-* 
+* VM Config
+* Profile Management
