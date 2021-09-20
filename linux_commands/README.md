@@ -6,3 +6,6 @@
     - help 
 
 * Generate Private/Public Keys
+
+* Basic Shell commands
+* 
