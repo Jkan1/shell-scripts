@@ -1,4 +1,5 @@
-# shell-scripts-01
+# shell-scripts
 
-* Custom Shell Scripts
-* Linux Shell Notes
+* Linux Shell Commands
+
+* Shell makefile examples
