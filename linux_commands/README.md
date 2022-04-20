@@ -50,6 +50,7 @@
   * Check open Ports
     * sudo netstat -ntlpu | grep LISTEN
     * sudo lsof -i -P -n | grep LISTEN (List Of Open File)
+    * netstat -Lan (check connection queue size)
 
 * Generate Private/Public Keys
   * ssh-keygen -t rsa -C "your_email@example.com" (-t algorithm)
