@@ -31,6 +31,19 @@
   * passwd --expire `<username>` (expire user password)
   * chage --lastday 0 `<username>` (using chage command)
 
+* Permission Management
+  * `d rwx rwx r-x  <username>  <group>   <filename>` (d:directory, -:file)
+  * r : Permission to read the file.
+  * w : Permission to write (or delete) the file.
+  * x : Permission to execute the file, or, in the case of a directory, search it.
+  * u : owner file's owner
+  * g : group users who are members of the file's group
+  * o : others users who are neither the owner nor members of group
+  * a : all All three of the above, same as ugo
+  * chmod u=rx `<filename>`
+  * sudo chown `<username>` `<filename>`
+  * chown `<username>`:`<group>` `<filename>`
+
 * Network Commands
   * ip addr
   * ifconfig
