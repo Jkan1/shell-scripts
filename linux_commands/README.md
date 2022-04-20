@@ -23,6 +23,13 @@
   * sudo useradd `<options>` `<username>` (Only root)
   * sudo passwd `<username>`
   * sudo useradd -m `<username>` (-m --create-home)
+  * id -u `<username>` (user Id)
+  * sudo useradd -g `<group>` `<username>`
+  * sudo useradd -e `<2019-01-22>` `<username>` (temporary user, set account expiry) 
+  * sudo chage -l `<username>` (user password expiry details)
+  * useradd -D (default command values) (`/etc/default/useradd`)
+  * passwd --expire `<username>` (expire user password)
+  * chage --lastday 0 `<username>` (using chage command)
 
 * Network Commands
   * ip addr
