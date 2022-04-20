@@ -60,3 +60,17 @@
 	     * LocalForward `<LOCAL_PORT>` `HOST_IP_ADDRESS:443`
 
 * Firewall Commands
+  * systemctl start firewalld
+  * systemctl stop firewalld 
+  * firewall-cmd --list-ports
+  * firewall-cmd --get-zones
+  * firewall-cmd --get-zone-of-interface=eth0
+  * firewall-cmd --add-port 1191/tcp (open port 1191 for TCP traffic)
+  * firewall-cmd --permanent --add-port 1191/tcp (open port 1191 for TCP traffic & reboot persistent)
+  * firewall-cmd --permanent --add-port 60000-61000/tcp (range of ports)
+  * sudo ufw enable (Uncomplicated Firewall (UFW))
+  * sudo ufw disable 
+  * sudo ufw allow 1191/tcp
+  * sudo ufw allow 60000-61000/tcp
+
+
