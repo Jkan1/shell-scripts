@@ -36,7 +36,7 @@
   * ifconfig
   * Check open Ports
     * sudo netstat -ntlpu | grep LISTEN
-    * sudo lsof -i -P -n | grep LISTEN
+    * sudo lsof -i -P -n | grep LISTEN (List Of Open File)
 
 * Generate Private/Public Keys
   * ssh-keygen -t rsa -C "your_email@example.com" (-t algorithm)
