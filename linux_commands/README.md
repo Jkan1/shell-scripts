@@ -23,9 +23,10 @@
   * sudo useradd `<options>` `<username>` (Only root)
   * sudo passwd `<username>`
   * sudo useradd -m `<username>` (-m --create-home)
-  * id -u `<username>` (user Id)
+  * id -u `<userid>` (user Id)
   * id `<username>` (as above - for user details)
   * sudo useradd -g `<group>` `<username>`
+  * useradd -aG `<group>` `<username>` (append user to group) (ex. `wheel` group is admin group)
   * sudo useradd -e `<2019-01-22>` `<username>` (temporary user, set account expiry) 
   * sudo chage -l `<username>` (user password expiry details)
   * useradd -D (default command values) (`/etc/default/useradd`)
