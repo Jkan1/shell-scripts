@@ -21,7 +21,7 @@
 
 * User Management
   * sudo useradd `<options>` `<username>` (Only root)
-  * sudo passwd `<username>`
+  * sudo passwd `<username>` (change password)
   * sudo useradd -m `<username>` (-m --create-home)
   * id -u `<userid>` (user Id)
   * id `<username>` (as above - for user details)
@@ -31,8 +31,16 @@
   * sudo chage -l `<username>` (user password expiry details)
   * useradd -D (default command values) (`/etc/default/useradd`)
   * passwd --expire `<username>` (expire user password)
-  * chage --lastday 0 `<username>` (using chage command)
+  * chage --lastday 0 `<username>` (using chage command) (ex. -M:max days,-m: min days)
   * userdel `<username>`
+  * usermod -L `<username>` (lock)
+  * usermod -U `<username>` (unlock)
+  * usermod -g `<groupname>` `<username>` (set primary group for user)
+  * usermod -G `<groupname>` `<username>` (add 1 secondary group for user)
+  * usermod -aG `<groupname>` `<username>` (append group for user)
+  * groupadd -r `<groupname>` (create system group with system group id)
+  * groupmod -n `<newgroupname>` `<groupname>` (rename group)
+  * groupmod -g `<newgroupid>` `<groupname>` (updated group id)
 
 * Permission Management
   * `d rwx rwx r-x  <username>  <group>   <filename>` (d:directory, -:file)
