@@ -24,12 +24,14 @@
   * sudo passwd `<username>`
   * sudo useradd -m `<username>` (-m --create-home)
   * id -u `<username>` (user Id)
+  * id `<username>` (as above - for user details)
   * sudo useradd -g `<group>` `<username>`
   * sudo useradd -e `<2019-01-22>` `<username>` (temporary user, set account expiry) 
   * sudo chage -l `<username>` (user password expiry details)
   * useradd -D (default command values) (`/etc/default/useradd`)
   * passwd --expire `<username>` (expire user password)
   * chage --lastday 0 `<username>` (using chage command)
+  * userdel `<username>`
 
 * Permission Management
   * `d rwx rwx r-x  <username>  <group>   <filename>` (d:directory, -:file)
@@ -43,6 +45,9 @@
   * chmod u=rx `<filename>`
   * sudo chown `<username>` `<filename>`
   * chown `<username>`:`<group>` `<filename>`
+  * visudo (to edit user permissions to use commands)
+	* ex: user1 ALL = NOPASSWD :/bin/rpm, /usr/bin/yum
+	* i.e., `<username>` `<hosts>` = `<no password need on command use>` : `<command1>`, `<command2>`
 
 * Network Commands
   * ip addr
