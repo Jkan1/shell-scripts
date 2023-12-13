@@ -43,12 +43,12 @@
   * groupmod -g `<newgroupid>` `<groupname>` (updated group id)
 
 * Permission Management
-  * `d rwx rwx r--  <username>  <group>   <filename>` (d:directory, -:file)
+  * `d rwx r-x r--  <username>  <group>   <filename>` (d:directory, -:file)
   * r : Permission to read the file.
   * w : Permission to write (or delete) the file.
   * x : Permission to execute the file, or, in the case of a directory, search it.
   * u : owner file's owner (first 3 bits `rwx`)
-  * g : group users who are members of the file's group (second 3 bits `rwx`)
+  * g : group users who are members of the file's group (second 3 bits `r-x`)
   * o : others users who are neither the owner nor members of group (last 3 bits `r--`)
   * a : all All three of the above, same as ugo
   * chmod u=rx `<filename>`
