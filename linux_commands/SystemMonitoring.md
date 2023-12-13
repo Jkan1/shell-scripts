@@ -9,6 +9,9 @@
 * kill %`<jobnum>` (kill bg job)
 * kill -l (list kill signals)
 * pgrep `<sevicename>` -l (find process)
+* pgrep -u `<username>` -l (find by user)
 * kill -`<signal>` `<pid>` (SIGKILL immediate)
 * pkill `<servicename>` (terminate by service not just a process)
+* w (check all logged in users in system)
+* pkill -9 -t `<ttyname>` (kick out user)  
 
