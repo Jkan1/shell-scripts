@@ -19,6 +19,10 @@
   * sudo su - `<username>` (Login shell, loads `<username>` home directory profile ENV and configs)
   * sudo service `<service>` start|stop|restart|reload|status 
   * sudo systemctl enable|status `<service>`
+  * cmd >> file.txt 2>&1
+	* `>>` file.txt : Open file.txt in append mode and redirect stdout there.
+	* `2>&1` : Redirect stderr to "where stdout is currently going". In this case, that is a file opened in append mode.
+  	* In other words, the &1 reuses the file descriptor which stdout currently uses.
 
 * User Management
   * sudo useradd `<options>` `<username>` (Only root)
