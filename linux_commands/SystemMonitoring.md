@@ -8,4 +8,7 @@
 * bg `<jobnum>` (run job in bg)
 * kill %`<jobnum>` (kill bg job)
 * kill -l (list kill signals)
+* pgrep `<sevicename>` -l (find process)
+* kill -`<signal>` `<pid>` (SIGKILL immediate)
+* pkill `<servicename>` (terminate by service not just a process)
 
