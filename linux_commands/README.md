@@ -57,6 +57,9 @@
   * chmod u=rx `<filename>`
   * sudo chown `<username>` `<filename>`
   * chown `<username>`:`<group>` `<filename>`
+  * chmod u+s `<filename>` (setuid permission to run with permissions of owner)
+  * chmod g+s `<filename>` (setgid permission - group set from directory group)
+  * chmod o+t `<filename>` (sticky bit permission - only owner, or root can rename/delete file)
   * visudo (to edit user permissions to use commands)
 	* ex: user1 ALL = NOPASSWD :/bin/rpm, /usr/bin/yum
 	* i.e., `<username>` `<hosts>` = `<no password need on command use>` : `<command1>`, `<command2>`
