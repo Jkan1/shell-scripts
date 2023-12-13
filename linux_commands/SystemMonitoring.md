@@ -25,3 +25,20 @@
 * systemctl stop `<servicename>`.service
 * systemctl disable `<servicename>`.service (no autostart on sys boot)
 * systemctl mask/unmask `<servicename>` (to not allow other users to start)
+
+* cat /var/log (system service logs)
+* tail -f `<filename>` (follow last lines)
+* vi /etc/rsyslog.conf
+
+* timedatectl
+* timedatectl list-timezones
+* timedatectl set-timezone `<timezonename>`
+
+* hostnamectl set-hostname `<a.example.com>`
+* vi /etc/hosts (sys first checks this file to resolve hosts, then DNS)
+* cat /etc/resolve.conf (DNS info)
+
+### Add new DNS
+* nmcli con mod "default" ipv4.dns 8.8.8.8
+* nmcli con down default
+* nmcli con up default
