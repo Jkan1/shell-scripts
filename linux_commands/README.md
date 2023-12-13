@@ -23,6 +23,7 @@
 	* `>>` file.txt : Open file.txt in append mode and redirect stdout there.
 	* `2>&1` : Redirect stderr to "where stdout is currently going". In this case, that is a file opened in append mode.
   	* In other words, the &1 reuses the file descriptor which stdout currently uses.
+  * cat `<filename>` | grep `<string>` | wc -l (count lines) 
 
 * User Management
   * sudo useradd `<options>` `<username>` (Only root)
