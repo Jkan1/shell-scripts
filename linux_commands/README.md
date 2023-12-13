@@ -13,7 +13,7 @@
   * whoami (Logged in Username)
 
 * Basic Shell commands
-  * locate `<filename>` & find "`<filename>`" (to find files)
+  * locate `<filename>` & find `<path>` -name "`<filename>`" (to find files)
   * mkdir -p parentFolder/childFolder (create parent folders)
   * sudo su `<username>` (substitute user)
   * sudo su - `<username>` (Login shell, loads `<username>` home directory profile ENV and configs)
