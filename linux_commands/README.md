@@ -13,6 +13,7 @@
     * whoami (Logged in Username)
 
 * Basic Shell commands
+  * locate `<filename>` & find "`<filename>`" (to find files)
   * mkdir -p parentFolder/childFolder (create parent folders)
   * sudo su `<username>` (substitute user)
   * sudo su - `<username>` (Login shell, loads `<username>` home directory profile ENV and configs)
@@ -43,6 +44,7 @@
   * groupmod -g `<newgroupid>` `<groupname>` (updated group id)
 
 * Permission Management
+  * read = 4, write = 2, execute = 1
   * `d rwx r-x r--  <username>  <group>   <filename>` (d:directory, -:file)
   * r : Permission to read the file.
   * w : Permission to write (or delete) the file.
@@ -51,6 +53,7 @@
   * g : group users who are members of the file's group (second 3 bits `r-x`)
   * o : others users who are neither the owner nor members of group (last 3 bits `r--`)
   * a : all All three of the above, same as ugo
+  * chmod 755 `<filename>` (octal mode)
   * chmod u=rx `<filename>`
   * sudo chown `<username>` `<filename>`
   * chown `<username>`:`<group>` `<filename>`
